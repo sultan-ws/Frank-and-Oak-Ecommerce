@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#asideScrollBar::-webkit-scrollbar{
+    width: 8px;
+}
+#asideScrollBar::-webkit-scrollbar-thumb{
+    background-color: #666;
+}
+#asideScrollBar::-webkit-scrollbar-track{
+    background-color: #d7d7d7;
+}
+
+/* ! Checkbox Design */
+.custom-checkbox {
+    @apply appearance-none w-5 h-5 bg-black border border-black focus:outline-none;
+  }
+
+  .custom-checkbox:checked {
+    @apply bg-black;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20.285 2.709l-11.964 11.964-5.25-5.25 1.414-1.414 3.836 3.836 10.55-10.55 1.414 1.414z"/></svg>');
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
