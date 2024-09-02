@@ -7,18 +7,20 @@ import ProductReview from "./HomeComponents/ProductReview";
 import BetterLiving from "./HomeComponents/BetterLiving";
 import ProductDetails from "./product/product-details/[pid]/page";
 import Category from "./category/Category";
+import Login from "./modals/Login";
+
 
 export default function Home() {
   return (
     <>
     <Header/>
-    {/* <Banner/>
+    <Banner/>
     <FeaturedCategories/>
     <ThisJustIn/>
     <ProductReview/>
-    <BetterLiving/> */}
+    <BetterLiving/>
     {/* <ProductDetails/> */}
-    <Category/>
+    {/* <Category/> */}
     </>
   );
 }

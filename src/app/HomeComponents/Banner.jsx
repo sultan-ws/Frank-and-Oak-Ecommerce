@@ -1,7 +1,7 @@
 import React from 'react'
 export default function Banner() {
   return (
-    <section className='w-full'>
+    <section className='w-full mt-10'>
         <div className='h-full  relative'>
             <img className='md:block hidden w-full h-full' src="/images/banner.webp" alt="Banner" />
             <img className='md:hidden mt-10 block w-full h-full' src="/images/BannerMobile.webp" alt="Banner" />

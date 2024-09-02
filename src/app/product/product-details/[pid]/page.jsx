@@ -6,10 +6,10 @@ export default function ProductDetails() {
   return (
     <section className="w-full grid lg:grid-cols-[60%_38%] md:grid-cols-[40%_60%] grid-cols-1 justify-between mt-[50px] p-2 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-3">
-        <img src="images/pdDetails1.webp" alt="" />
-        <img src="images/pdDetails2.webp" alt="" />
-        <img src="images/pdDetails3.webp" alt="" />
-        <img src="images/pdDetails4.webp" alt="" />
+        <img src="https://www.frankandoak.com/cdn/shop/files/2110369-002.01_1200x.jpg?v=1725030315" alt="" />
+        <img src="https://www.frankandoak.com/cdn/shop/files/2110369-002.02_1200x.jpg?v=1725030315" alt="" />
+        <img src="https://www.frankandoak.com/cdn/shop/files/2110369-002.03_1200x.jpg?v=1725030315" alt="" />
+        <img src="https://www.frankandoak.com/cdn/shop/files/2110369-002.04_1200x.jpg?v=1725030315" alt="" />
       </div>
       <div className="p-10">
         <div className="text-[13px] font-medium">
