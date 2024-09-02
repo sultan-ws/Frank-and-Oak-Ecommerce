@@ -6,10 +6,14 @@ import { BsArrowRight } from "react-icons/bs";
 import { useState } from "react";
 export default function Login({loginStatus,setLoginStatus}) {
   let [compStatus,setCompStatus]=useState(true)
+  console.log(loginStatus);
+  
   return (
     <section className={` ${loginStatus ? "block" : "hidden"} w-full h-screen flex bg-[rgba(0,0,0,0.4)] items-center justify-center  fixed  left-0 top-0 z-[9999999]`}>
-        <div className='lg:w-[42%] md:w-[80%] h-[700px] overflow-scroll  px-10 pt-5 pb-8 bg-[#F9F9F9] overflow-x-hidden mt-5'>
-        <IoCloseSharp onClick={()=>setLoginStatus(!loginStatus)} className="w-8 h-8 relative left-[99%]" />
+        <form className='relative lg:w-[42%] md:w-[80%] h-[700px] overflow-scroll  px-10 pt-5 pb-8 bg-[#F9F9F9] overflow-x-hidden mt-5'>
+          <button onClick={()=>setLoginStatus(false)} className=" z-[999999999] absolute top-3 right-3 border-red-700" >
+        <IoCloseSharp className="w-8 h-8" />
+          </button>
             <div className='text-center'>
                 <h3 className='text-[22px] font-semibold mb-1'>Welcome back!</h3>
                 <p className='text-[14px] font-semibold'>Log in to enjoy your perks</p>
@@ -50,7 +54,7 @@ export default function Login({loginStatus,setLoginStatus}) {
               </div>
             </div>
 
-        </div>
+        </form>
     </section>
   )
 }

@@ -8,6 +8,8 @@ import { BsBagPlus } from "react-icons/bs";
 import Login from '../modals/Login';
 export default function Header() {
   let [loginStatus,setLoginStatus]=useState(false)
+  console.log(loginStatus);
+  
   return (
     <header className='fixed top-0 z-[999999] w-full shadow-md py-2 lg:py-1 px-2 sm:px-4 md:px-10 bg-white flex justify-between'>
       <div className='  flex gap-2 sm:gap-4 items-center  basis-[70%] md:basis-[20%] lg:basis-[15%]'>
@@ -27,7 +29,7 @@ export default function Header() {
           <li>
           <CiSearch className='sm:w-7 sm:h-7 h-5 w-5'  />
           </li>
-          <li className='cursor-pointer' onClick={()=>setLoginStatus(!loginStatus)}>
+          <li className='cursor-pointer' onClick={()=>setLoginStatus(true)}>
           <FaRegUserCircle className='sm:w-[22px]  sm:h-7 h-5 w-[18px] ' />
             <Login loginStatus={loginStatus} setLoginStatus={setLoginStatus} />
           </li>
