@@ -14,9 +14,21 @@ module.exports = {
       },
       fontFamily: {
         'Montserrat': ['"Montserrat"', '"sans-serif"'],
+        'Poppins': ['"Poppins"','"sans-serif"']
+      },
+      colors: {
+        customGray: '#666666',
+        customBorder: '#DDDDDD',
+        paraColor: '#707070',
+      },
+      boxShadow: {
+        'Btn-shadow': '5px 5px 0px 0px #DDD',
       },
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar-hide')
+  ],
 };

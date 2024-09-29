@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { Card } from '../category/category';
+import { Card } from '../common/Card';
 
 export default function ThisJustIn() {
     let [quickAdd,setQuickAdd]=useState(false)

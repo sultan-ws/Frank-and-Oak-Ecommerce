@@ -6,9 +6,10 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsBagPlus } from "react-icons/bs";
 import Login from '../modals/Login';
+import Cart from '../pages/cart/page';
 export default function Header() {
   let [loginStatus,setLoginStatus]=useState(false)
-  console.log(loginStatus);
+  let [cartStatus,setCartStatus]=useState(false)
   
   return (
     <header className='fixed top-0 z-[999999] w-full shadow-md py-2 lg:py-1 px-2 sm:px-4 md:px-10 bg-white flex justify-between'>
@@ -36,8 +37,9 @@ export default function Header() {
           <li>
           <FaRegHeart className='sm:w-[22px] sm:h-7 h-5 w-[18px]' />
           </li>
-          <li>
+          <li className='cursor-pointer' onClick={()=>setCartStatus(true)}>
           <BsBagPlus className='sm:w-[22px] sm:h-7 h-5 w-[18px]' />
+          <Cart cartStatus={cartStatus} setCartStatus={setCartStatus} />
           </li>
         </ul>
       </nav>

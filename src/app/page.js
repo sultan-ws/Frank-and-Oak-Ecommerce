@@ -6,8 +6,10 @@ import ThisJustIn from "./HomeComponents/ThisJustIn";
 import ProductReview from "./HomeComponents/ProductReview";
 import BetterLiving from "./HomeComponents/BetterLiving";
 import ProductDetails from "./product/product-details/[pid]/page";
-import Category from "./category/Category";
 import Login from "./modals/Login";
+import Footer from "./common/Footer";
+import Cart from "./pages/cart/page";
+import Category from "./collections/page";
 
 
 export default function Home() {
@@ -19,8 +21,10 @@ export default function Home() {
     <ThisJustIn/>
     <ProductReview/>
     <BetterLiving/>
+    {/* <Footer/> */}
     {/* <ProductDetails/> */}
     {/* <Category/> */}
+    {/* <Cart/> */}
     </>
   );
 }
