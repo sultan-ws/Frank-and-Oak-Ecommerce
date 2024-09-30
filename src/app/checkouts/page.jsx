@@ -6,12 +6,12 @@ export default function Checkout() {
   let [orderSummary,setOrderSummary]=useState(false)
   return (
     <>
-      <header className="w-full border-b border-customBorder py-2 font-Poppins">
+      {/* <header className="w-full border-b border-customBorder py-2 font-Poppins">
         <div className="max-w-[1150px] mx-auto flex items-center justify-between">
           <div className="font-bold text-[36px]">Frank And Oak</div>
           <IoBagHandleOutline size={30} />
         </div>
-      </header>
+      </header> */}
       <div onClick={()=>setOrderSummary(!orderSummary)} className="lg:hidden bg-[#F5F5F5] cursor-pointer w-full py-5 px-10 border-y flex items-center justify-between border-customBorder">
             <div className="flex text-sm items-center gap-2">Show order summary {orderSummary ? <MdKeyboardArrowUp size={20}/> : <MdKeyboardArrowDown size={20}/>}</div>
             <div className="text-[19px] font-semibold">$345.05</div>
