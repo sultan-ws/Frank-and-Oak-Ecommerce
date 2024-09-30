@@ -23,6 +23,7 @@ module.exports = {
       },
       boxShadow: {
         'Btn-shadow': '5px 5px 0px 0px #DDD',
+        'Btn-shadow-white': '5px 5px 0px 0px #FFF',
       },
 
     },

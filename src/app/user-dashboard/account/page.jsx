@@ -10,7 +10,6 @@ export default function Account() {
   let [resetPassword,setResetPassword]=useState(false)
   return (
     <>
-      <Header />
       <section className="pt-[60px] px-[30px]">
         <BreadCrumb prop1={"Home"} prop2={"My Account"} prop3={"Account settings"} />
         <div className='grid lg:grid-cols-[20%_auto] grid-cols-1 gap-10'>
@@ -127,7 +126,7 @@ export default function Account() {
 
 export function AccountSideBar() {
   return (
-    <div className='lg:block hidden'>
+    <div className='lg:block hidden h-screen'>
       <div className='bg-[#EBECEE] px-10 py-8'>
         <ul className='space-y-2'>
           <li className='font-medium text-[15px]'>

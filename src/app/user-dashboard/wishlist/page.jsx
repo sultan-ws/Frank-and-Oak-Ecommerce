@@ -8,7 +8,6 @@ import { Card } from "@/app/common/Card";
 export default function Wishlist() {
   return (
     <>
-      <Header />
       <section className="pt-[60px] px-[30px]">
         <BreadCrumb
           prop1={"Home"}

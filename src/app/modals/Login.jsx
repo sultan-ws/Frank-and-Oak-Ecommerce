@@ -6,7 +6,6 @@ import { BsArrowRight } from "react-icons/bs";
 import { useState } from "react";
 export default function Login({loginStatus,setLoginStatus}) {
   let [compStatus,setCompStatus]=useState(true)
-  console.log(loginStatus);
   
   return (
     <section className={` ${loginStatus ? "block" : "hidden"} w-full h-screen flex bg-[rgba(0,0,0,0.4)] items-center justify-center  fixed  left-0 top-0 z-[9999999]`}>

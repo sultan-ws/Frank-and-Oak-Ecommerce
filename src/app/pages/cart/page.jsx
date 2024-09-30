@@ -1,3 +1,4 @@
+"use client"
 import { BsArrowLeft } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
@@ -6,7 +7,7 @@ import Link from "next/link";
 export default function Cart({cartStatus,setCartStatus}) {
   return (
     <>
-    <section className={`${cartStatus ? "block" : "hidden"}`}>
+    <section className={`${cartStatus ? "opacity-100 visible" : "opacity-0 invisible"} duration-500`}>
     <div className="bg-[rgba(0,0,0,0.6)] border border-red-700 fixed top-0 z-[9999999] w-full min-h-screen">
       <div className='lg:w-[38%] w-full  fixed top-0 right-0 z-[999999] bg-white'>
         <div onClick={()=>setCartStatus(!cartStatus)} className='py-3 px-6 flex items-center gap-2 bg-[#F9F9F9] cursor-pointer'>
