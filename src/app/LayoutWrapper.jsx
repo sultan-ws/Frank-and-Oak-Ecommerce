@@ -7,26 +7,16 @@ import { usePathname } from "next/navigation";
 export default function LayoutWrapper({ children }) {
 
   let [removeCommons,setRemoveCommons]=useState(false)
-  const router=usePathname()
-  
-  useEffect(()=>{
-   
-    console.log(router == "/checkouts" , "result");
-    if(router == "/checkouts"){
-      setRemoveCommons(true)
-    }
-    else{
-      setRemoveCommons(false)
-    }
-  },[])
+  const route=usePathname()
+  let ifCommon = (route !== '/checkouts')
 
   return (
     <main>
-      {/* <Header/> */}
-      {removeCommons && <Header /> }
+      {ifCommon && <Header/>}
+
       {children}
-      {removeCommons && <Footer /> }
-      {/* <Footer/> */}
+
+      {ifCommon && <Footer/>}
     </main>
   );
 }
